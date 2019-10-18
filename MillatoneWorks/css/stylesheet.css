@@ -1,6 +1,57 @@
+/*////////////////// Nav */
+
 .btn {
     border-radius: 1.25rem;
 }
-.logo {
-    
+
+.navbar-light .navbar-nav .nav-link:focus .navbar-light .navbar-nav .nav-link:hover {
+    color: goldenrod
+}
+
+.carousel-shim {
+    margin-top: 56px;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+/*//////////////// Colors */
+.alert-warning {
+    background-color: #ffe5bf;
+
+}
+
+/*//////////////// Spacing */
+
+.alert {
+    margin-bottom: 0rem;
+}
+
+
+/*//////////////// Typography */
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*/////////////// Responsive */
+
+@media only screen and (max-width: 399px) {
+    .logo-md-lg {
+        display: none;
+
+    }
+}
+
+/*/////////////// For width 400px and larger */
+@media only screen and (min-width: 400px) {
+    .logo-sm {
+        display: none;
+    }
 }

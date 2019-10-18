@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato|Open+Sans|Oswald&display=swap" rel="stylesheet">
+
   <title>Home</title>
 </head>
 
@@ -39,64 +43,72 @@
       </div>
     </div>
   </div>
+
+  <!-- Subscription Modal End -->
+
   <header>
 
     <!-- Nav Start -->
 
-    <nav>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand logo" href="index.html">MILLATONE WORKS</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-            aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo-sm" href="index.html" alt="Millatone Works">
+          <img src="images/logo-sm.png" width="auto" height="33px">
+        </a>
+        <a class="navbar-brand logo-md-lg" href="index.html" alt="MILLATONE WORKS">
+          <img src="images/logo-md-lg.png" width="auto" height="29px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/orange.svg" width="auto" height="35px">
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarsExample07">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown07">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-
-          </div>
+        <div class="collapse navbar-collapse justify-content-right" id="navbarsExample07">
+          <ul class="navbar-nav  justify-content-right">
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
     </nav>
+
   </header>
-  <main>
+
+  <main role="main">
 
     <!-- Carousel Start -->
 
-    <div class="bd-example">
+    <div class="bd-example carousel-shim">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://via.placeholder.com/1500x900/000000/FFFFFF/?
-
-                          C/O https://placeholder.com/ " class="d-block w-100" alt="...">
+        <div class="carousel-inner ">
+          <div class="carousel-item active d-none d-md-block d-lg-none">
+            <img src="https://via.placeholder.com/1500x900/000000/FFFFFF/?" class=" w-100" alt="Product 1">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>  
             </div>
-          </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active  d-block d-md-none d-lg-none">
+                  <img src="https://via.placeholder.com/375x606/000000/FFFFFF/?" class=" w-100" alt="Product 1">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>  
+                  </div>
           <div class="carousel-item">
             <img src="https://via.placeholder.com/1500x900/0000FF/808080?
 
@@ -129,10 +141,10 @@
 
     <!-- Cookies Alert -->
 
-    <div class="container-fluid"></div>
-    <div class="row bm-5">
-      <div class="col-12">
-        <div class="alert alert-warning alert-dismissible fade show text-center" role="alert">
+
+    <div class="row">
+      <div class="col">
+        <div class="alert alert-warning alert-dismissible fade show text-center fixed-bottom" role="alert">
           This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt-out if
           you wish.
           <a href="...">Cookie settings</a>
@@ -142,7 +154,7 @@
         </div>
       </div>
     </div>
-    </div>
+
   </main>
 
   <!-- Optional JavaScript -->
