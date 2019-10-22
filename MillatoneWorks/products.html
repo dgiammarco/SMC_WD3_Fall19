@@ -2,60 +2,66 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/stylesheet.css">
-    
-    <title>Products</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <title>Products</title>
 </head>
 
-<body class="natural-bg">
-    <header>
+<body>
+  
+  <!-- Nav Start -->
+  
+  <header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Container</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-                    aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    
 
-                <div class="collapse navbar-collapse" id="navbarsExample07">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown07">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-block d-sm-none" href="index.html">
+          <img src="images/logo-sm.png" width="119px" height="33px" alt="Logo for x-small through small screens">
+        </a>
+        <a class="navbar-brand d-none d-sm-block" href="index.html">
+          <img src="images/logo-md-lg.png" width="201px" height="25px" alt="Logo for small through large screen">
+        </a>
+        <button class="navbar-toggler unselected" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/wholeorange.svg" id="orange" width="35px" height="35px" alt="Navigation Toggle" onclick="change();">
+        </button>
 
-                </div>
-            </div>
-        </nav>
+        <div class="collapse navbar-collapse justify-content-right" id="navbarsExample07">
+          <ul class="navbar-nav  justify-content-right">
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    </header>
-    <main>
+  </header>
+  
+  <!-- Nav End -->
+
+    <main class="nav-shim">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                <h1 class="display-5 light heading-kerning">SKINCARE</h1>
+                <p class="p-shim">Skincare expertise from Northern California radically transforming the chemistry of beauty to match or exceed conventional chemical efficacy.
                 </p>
             </div>
         </div>
@@ -65,58 +71,83 @@
         <div class="container pt-5">
 
             <div class="card-deck">
-                <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex align-items-stretch">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
                     <div class="card mb-3 ">
-                        <img src="" class="card-img-top" alt="product-photo">
+                        <img src="images/regeneration-cream.png" class="card-img-top" alt="product-photo">
                         <div class="card-body">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text">Blandit massa enim nec dui nunc mattis enim ut tellus. Ut ornare
-                                lectus sit amet est placerat.</p>
+                            <h5 class="card-title">Regeneration Cream</h5>
+                            <p class="card-text">The regeneration creamis a powerful anti aging cream that reduces wrinkles and repairs skin damage. </p>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="#" class="btn btn-secondary d-block">Let's go!</a>
+                            <a href="#" class="btn btn-secondary d-block">DETAILS</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex align-items-stretch">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
                     <div class="card mb-3">
-                        <img src="" class="card-img-top" alt="product-photo">
+                        <img src="images/moisturizing-spray-sm.png" class="card-img-top" alt="product-photo">
                         <div class="card-body">
-                            <h5 class="card-title">Product 2</h5>
+                            <h5 class="card-title">Moisturizing Spray</h5>
                             <p class="card-text">Vehicula ipsum a arcu cursus. Est sit amet facilisis magna.
                                 Adipiscing enim eu turpis egestas. </p>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="#" class="btn btn-secondary d-block">Let's go!</a>
+                            <a href="#" class="btn btn-secondary d-block">DETAILS</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex align-items-stretch">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
                     <div class="card mb-3">
-                        <img src="" class="card-img-top" alt="product-photo">
+                        <img src="images/face-gel.png" class="card-img-top" alt="product-photo">
                         <div class="card-body">
-                            <h5 class="card-title">Product 3</h5>
+                            <h5 class="card-title">Face Gel</h5>
                             <p class="card-text">Malesuada fames ac turpis egestas integer eget aliquet nibh.
                                 Dolor magna eget lorem ipsum. </p>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="#" class="btn btn-secondary d-block">Let's go!</a>
+                            <a href="#" class="btn btn-secondary d-block">DETAILS</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 mb-5 d-flex align-items-stretch">
+                <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
                     <div class="card mb-3">
-                        <img src="" class="card-img-top" alt="product-photo">
+                        <img src="images/day-cream.png" class="card-img-top" alt="product-photo">
                         <div class="card-body">
-                            <h5 class="card-title">Product 4</h5>
+                            <h5 class="card-title">Day Cream</h5>
                             <p class="card-text">Sapien faucibus et molestie ac. Volutpat est velit egestas dui
                                 id ornare.</p>
                         </div>
                         <div class="card-footer bg-transparent">
-                            <a href="#" class="btn btn-secondary d-block">Let's go!</a>
+                            <a href="#" class="btn btn-secondary d-block">DETAILS</a>
                         </div>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
+                        <div class="card mb-3">
+                            <img src="images/cleansing-gel.png" class="card-img-top" alt="cleansing gel">
+                            <div class="card-body">
+                                <h5 class="card-title">Cleansing Gel</h5>
+                                <p class="card-text">Malesuada fames ac turpis egestas integer eget aliquet nibh.
+                                    Dolor magna eget lorem ipsum. </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-secondary d-block">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 d-flex align-items-stretch">
+                        <div class="card mb-3">
+                            <img src="images/day-cream.png" class="card-img-top" alt="product-photo">
+                            <div class="card-body">
+                                <h5 class="card-title">Night Cream</h5>
+                                <p class="card-text">Sapien faucibus et molestie ac. Volutpat est velit egestas dui
+                                    id ornare.</p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-secondary d-block">DETAILS</a>
+                            </div>
+                        </div>
+                    </div>
 
             </div>
         </div>
@@ -133,6 +164,24 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- nav-icon-toggle -->
+    <script>
+            var image_tracker = 'whole';
+       
+       function change(){
+           var image = document.getElementById('orange');
+           if(image_tracker=='whole'){
+               image.src='images/halforange.svg';
+               image_tracker='half';
+           }
+           else{
+               image.src='images/wholeorange.svg';
+               image_tracker='whole';
+           
+           }
+       }
     </script>
 </body>
 

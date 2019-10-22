@@ -1,56 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Team</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <title>Team</title>
+</head>
+
+<body>
   
-  <body class="natural-bg">
-    <header>
-        <nav>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container">
-                          <a class="navbar-brand" href="index.html">Container</a>
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                      
-                          <div class="collapse navbar-collapse" id="navbarsExample07">
-                            <ul class="navbar-nav mr-auto">
-                              <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                              </li>
-                              <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown07">
-                                  <a class="dropdown-item" href="#">Action</a>
-                                  <a class="dropdown-item" href="#">Another action</a>
-                                  <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                              </li>
-                            </ul>
-                            
-                          </div>
-                        </div>
-                      </nav>
-        </nav>
-    </header>
-    <main>
-             <!-- Three columns of featurettes -->
-             <div class="container">
+  <!-- Nav Start -->
+  
+  <header>
 
-                <!-- Three columns of text below the carousel -->
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-block d-sm-none" href="index.html">
+          <img src="images/logo-sm.png" width="119px" height="33px" alt="Logo for x-small through small screens">
+        </a>
+        <a class="navbar-brand d-none d-sm-block" href="index.html">
+          <img src="images/logo-md-lg.png" width="201px" height="25px" alt="Logo for small through large screen">
+        </a>
+        <button class="navbar-toggler unselected" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+          aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="images/wholeorange.svg" id="orange" width="35px" height="35px" alt="Navigation Toggle" onclick="change();">
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-right" id="navbarsExample07">
+          <ul class="navbar-nav  justify-content-right">
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  
+  <!-- Nav End -->
+
+
+  <main class="nav-shim">
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-5 light heading-kerning">THE TEAM</h1>
+              <p>Our team are backstage, in store and driving trends around the world. Find out how we got here and what fuels our passion.
+              </p>
+          </div>
+      </div>
+      
+      <!-- End Jumbotron -->
+    
+       <!-- Three columns of featurettes -->
+       <div class="container">
+
+                <!-- Three columns of text below the jumbotron -->
                 <div class="row pt-5">
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-4 col-md-6 text-center">
                         <img src="https://image1.commarts.com/images1/4/8/3/38482_102_164_MTYyNTQ2OTg1NzUxMTg1NTg.jpg" class="rounded-circle"
                             width="140px" height="140px">
                         <h2>Manny Pacquiao</h2>
@@ -59,7 +83,7 @@
                             Praesent commodo cursus magna.</p>
                         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4  text-center">
+                    <div class="col-lg-4 col-md-6 text-center">
                         <img src="https://image2.commarts.com/images1/5/9/8/0/1/1089519_102_120_ODAwMTQwMDE2MTAwMDY0NDk4Nw.jpg"
                             class="rounded-circle" width="auto" height="140px" preserveAspectRatio="xMidYMid slice">
                         <h2>Sarah Silver</h2>
@@ -69,7 +93,7 @@
                             tortor mauris condimentum nibh.</p>
                         <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
                     </div><!-- /.col-lg-4 -->
-                    <div class="col-lg-4  text-center">
+                    <div class="col-lg-4 col-md-6 text-center">
                         <img src="https://image0.commarts.com/images1/2/9/8/0/1/1089265_102_120_NjMyNDg0MTMyMTM3NDYxNDA2Mw.jpg"
                             class="rounded-circle" width="140px" height="140px">
                         <h2>Jimmy John</h2>
@@ -81,13 +105,32 @@
                     </div><!-- /.col-lg-4 -->
                 </div><!-- /.row -->
 
-            </div>
-    </main>
+      </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <!-- nav-icon-toggle -->
+    
+    <script>
+        var image_tracker = 'whole';
+   
+   function change(){
+       var image = document.getElementById('orange');
+       if(image_tracker=='whole'){
+           image.src='images/halforange.svg';
+           image_tracker='half';
+       }
+       else{
+           image.src='images/wholeorange.svg';
+           image_tracker='whole';
+       
+       }
+   }
+       </script>
+  
   </body>
 </html>
