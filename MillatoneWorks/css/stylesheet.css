@@ -3,9 +3,6 @@
 
 /*////////////////// Nav */
 
-.btn {
-    border-radius: 1.25rem;
-}
 
 
 
@@ -52,8 +49,9 @@ a {
     border-color: #7b7b7b;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 25px;
+    padding-right: 25px;
+
 
     
 
