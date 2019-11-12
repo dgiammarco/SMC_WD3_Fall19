@@ -1,0 +1,10 @@
+@charset "utf-8";
+canvas {
+    background-color: #fce2e2;
+}
+body {
+    background-color: #EEE;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
