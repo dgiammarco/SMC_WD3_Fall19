@@ -11,8 +11,27 @@
     <canvas width="800" height="600" id="Game">
         Please use a better browser!
     </canvas>
-    <script src="canvas.js"></script>
+    
+    <div class="scoreCounter">Score: <span id="gameScore"></span></div>
+
     <button id="hueButton" onclick="randColor()">Ball Colors</button>
     <button id="resetButton" onclick="resetClick()">Reset Number</button>
+
+    <form action="" method="POST">
+        <label for="hueComp">Red:</label>
+        <input type="range" min="0" max="360" id="hueComp">
+        <output for="hueComp"></output>
+        <br/>
+        <label for="satComp">Green:</label>
+        <input type="range" min="0" max="100" id="satComp">
+        <output for="satComp"></output>
+        <br/>
+        <label for="lightComp">Blue:</label>
+        <input type="range" min="0" max="100" id="lightComp">
+        <output for="lightComp"></output>
+    </form>
+
+
+    <script src="canvas.js"></script>
 </body>
 </html>
