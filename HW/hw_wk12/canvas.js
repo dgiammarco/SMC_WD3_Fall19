@@ -1,7 +1,7 @@
 var canvas = document.getElementById("Game");
 var ctx = canvas.getContext("2d");
 
-//seperate interface
+//seperate interface from canvas
 var screenHeight = canvas.height - 45;
 
 
@@ -15,6 +15,7 @@ var speedX = 5;
 var speedY = 3;
 var directionDown = true;
 var directionRight = true;
+
 
 
 function animate(event){
@@ -54,6 +55,15 @@ function animate(event){
 }
 
 animate();
+
+//Ball color change
+function randColor(){
+    // for (i = 0; i < 5; i++) {
+    //     text += "The number is " + i + "<br>";
+    // }
+     ballColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+     ctx.fill();
+}    
 
 
 //Score counter
@@ -105,10 +115,10 @@ canvas.addEventListener("click", function(event){
         
     else{ ballRadius *= .97;}
     })
+   
         
         
-        
-        
+
         
         //Junk
         
